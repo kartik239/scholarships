@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        rel="stylesheet"
+    >
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div>
+            <h1>🎓 Scholarship Tracker</h1>
+            <p>Track and explore scholarship opportunities</p>
+        </div>
+
+        <button id="themeToggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- Controls -->
+    <section class="controls">
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search scholarships..."
+            >
+        </div>
+
+        <div class="stats">
+            <span id="scholarshipCount">8 Scholarships</span>
+        </div>
+
+    </section>
+
+    <!-- Scholarship Grid -->
+    <section id="scholarshipContainer" class="scholarship-grid">
+        <!-- JS Injects Cards Here -->
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <h2 id="modalTitle"></h2>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
